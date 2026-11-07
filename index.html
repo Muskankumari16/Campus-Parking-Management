@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Parking Management System</title>
+    <link rel="stylesheet"
+    href="style.css"
+</head>
+<body>
+    <header>
+        <h1>Campus Parking Management</h1>
+        <p>Smart and Easy Campus Parking</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Parking dashboard</h2>
+            <div
+            Class=" parking-card"> <div class="card">
+            <h3>Total Parking Space </h3>
+            <p id="totalSlots">100</p>
+            </div>
+
+            <div 
+            class="card">
+        <h3> Available Spaces</h3>
+        <p id="availableSlots">70</p>
+            </div>
+            <div class="card">
+                <h3>Occupied Spaces</h3>
+                <p id="occupiedSlots">30</p>
+            </div>
+            </div>
+
+        </section>
+        <section class="permit-section">
+    <h2>Student Parking Permit</h2>
+    <p>Apply for your campus parking permit below.</p><form id="permitForm">
+    <label for="studentName">Student Name</label>
+    <input
+        type="text"
+        id="studentName"
+        placeholder="Enter your full name"
+        required
+    >
+
+    <label for="studentId">Student ID</label>
+    <input
+        type="text"
+        id="studentId"
+        placeholder="Enter your student ID"
+        required
+    >
+
+    <label for="vehicleNumber">Vehicle Registration Number</label>
+    <input
+        type="text"
+        id="vehicleNumber"
+        placeholder="e.g. PB10AB1234"
+        required
+    >
+
+    <label for="vehicleType">Vehicle Type</label>
+    <select id="vehicleType" required>
+        <option value="">Select vehicle type</option>
+        <option value="Two-Wheeler">Two-Wheeler</option>
+        <option value="Four-Wheeler">Four-Wheeler</option>
+    </select>
+
+    <label for="parkingZone">Preferred Parking Zone</label>
+    <select id="parkingZone" required>
+        <option value="">Select parking zone</option>
+        <option value="Zone A">Zone A</option>
+        <option value="Zone B">Zone B</option>
+        <option value="Zone C">Zone C</option>
+    </select>
+
+    <button type="submit">Apply for Permit</button>
+</form>
+
+<div id="permitMessage" aria-live="polite"></div>
+
+</section>
+    </main>
+
+    <footer>
+        <p>Campus Parking Management System | Student Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
